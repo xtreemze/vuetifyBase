@@ -66,9 +66,9 @@ module.exports = api => {
 }
 
 `
+		fs.mkdirSync('.vscode')
 
-
-		fs.writeFile(".vscode/settings.json", content, "utf-8", err => {
+		fs.writeFileSync(".vscode/settings.json", content, "utf-8", err => {
 			Error(err);
 		});
 
@@ -94,7 +94,7 @@ deploy:
 `
 
 
-		fs.writeFile(".travis.yml", content2, "utf-8", err => {
+		fs.writeFileSync(".travis.yml", content2, "utf-8", err => {
 			Error(err);
 		});
 
