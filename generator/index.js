@@ -98,6 +98,35 @@ deploy:
 			Error(err);
 		});
 
+const content3 = `{
+	// See http://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"octref.vetur",
+		"dbaeumer.vscode-eslint",
+		"xabikos.javascriptsnippets",
+		"gerane.theme-monokai-cobalt",
+		"eg2.vscode-npm-script",
+		"christian-kohler.path-intellisense",
+		"octref.vetur",
+		"dariofuzinato.vue-peek",
+		"sdras.vue-vscode-snippets",
+		"coder911th.vuetify-camelcase-snippets",
+		"coenraads.bracket-pair-colorizer",
+		"steoates.autoimport"
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": []
+}
+
+`
+
+
+fs.writeFileSync(".vscode/extensions.json", content3, "utf-8", err => {
+	Error(err);
+});
+
 
 	})
 
