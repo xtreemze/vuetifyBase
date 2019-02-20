@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-vuetify-workspace",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "VSCode workspace settings and Travis config for Github pages",
   "main": "index.js",
   "scripts": {
